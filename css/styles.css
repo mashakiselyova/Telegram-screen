@@ -1,0 +1,294 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    font-family: Tahoma, sans-serif;
+    background: #e7ebf0;
+}
+
+.wrapper{
+    height: 98%;
+    max-width: 1010px;
+    margin: auto;
+    background: white;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    height: 48px;
+    background-color: #5d8db3;
+    color: white;
+}
+
+header h1{
+    margin-left: 30px;
+}
+
+h1{
+    display: inline;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.title-wrapper{
+    width: 30%;
+    padding: 14px;
+}
+
+.title-wrapper:hover, .dialogue-wrapper:hover, .search-btn:hover, .options-btn:hover{
+    background-color: #3b6280;
+    cursor: pointer;
+}
+
+.dialogue-wrapper{
+    width: 60%;
+    padding: 14px;
+}
+
+.dialogue-wrapper h2, p{
+    display: inline;
+}
+
+.dialogue-wrapper h2{
+    font-size: 1em;
+}
+
+.dialogue-wrapper p{
+    font-size: 0.8em;
+    color: lightsteelblue;
+    margin-left: 5px;
+}
+
+.search-btn, .options-btn{
+    width: 6%;
+}
+
+.search-btn i, .options-btn i{
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+.dialogues{
+    width: 30%;
+    height: 100%;
+}
+
+.search-wrapper{
+    padding: 12px;
+}
+
+.searchbox{
+    width: 100%;
+    height: 34px;
+    background-color: #F2F2F2;
+    color: grey;
+}
+
+.search-text{
+    font-size: smaller;
+    padding: 8px;
+}
+
+.message-nav-active{
+    background-color: #5d8db3;
+    width: 100%;
+    height: 54px;
+    padding-top: 6px;
+    color: white;
+    position: relative;;
+}
+
+.message-nav{
+    width: 100%;
+    height: 54px;
+    padding-top: 6px;
+    color: black;
+    position: relative;;
+}
+
+.message-nav-active p, .message-nav p{
+    margin-left: 20px;
+    font-size: small;
+}
+
+.circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-left: 15px;
+    text-align: center;
+    float: left;
+}
+
+.circle h3, .contact-photo h3, .message-photo h3{
+    line-height: 12px;
+    font-weight: normal;
+}
+
+.message-time-nav{
+    position: absolute;
+    top: 0px;
+    right: 5px;    
+    float: right;
+    font-size: x-small !important;
+}
+
+#ais{
+    background: #73cdd0;
+}
+
+#kolya{
+    background: #80d066;
+    color: white;
+}
+
+#julia{
+    background: #fba76f;
+    color: white;
+}
+
+.dialogue{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    border-left-style: solid;
+    border-color: #F2F2F2;
+    border-width: 2px;
+}
+
+
+
+
+
+.previous-messages{
+    width: 100%;
+    height: 90%;
+    margin-top: 600px;
+}
+
+.today{
+    margin: 0;
+    text-align: center;
+    color: rgb(160, 160, 160);
+}
+
+.previous-message{
+    max-width: 560px;
+    min-height: 50px;
+    padding: 0 20px 0 15px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.previous-message-photo{
+    flex-grow: 1;
+    color: white;
+}
+
+.message-body{
+    flex-grow: 15;
+}
+
+.message-author{
+    margin: 1px 0 4px;
+    display: inline-block;
+    font-size: small;
+    font-weight: bold;
+    color: #5d8db3;
+    padding-left: 10px;
+}
+
+.message-text{
+    font-size: 13px;
+    padding-left: 73px;
+}
+
+.message-date{
+    flex-grow: 1;
+    color: #ADADAD;
+    top: 0px;
+    right: 5px;    
+    float: right;
+    font-size: small;
+}
+
+.message-wrapper{
+    width: 100%;
+    max-width: 554px;
+    padding: 10px 15px 30px;
+    margin: 0 auto;
+    height: 98px;
+}
+
+.message-form{
+    height: 97px;
+}
+
+.contact-photo{
+    margin-left: 20px;
+    float: right !important;
+    background-color: #73cdd0
+}
+
+.message-photo{
+    margin-right: 18px;
+    float: left !important;
+    background-color: #e57979
+}
+
+.contact-photo, .message-photo{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+}
+
+.send-form{
+    max-width: 382px;
+    left: 70px;
+    right: 72px;
+    margin: 0 auto;
+}
+
+.textarea{
+    resize: none;
+    border: 0;
+    outline: none;  
+    box-shadow: 0 1px 0 0 #e8e8e8;
+    padding: 1px 28px 1px 0;
+    position: relative;
+    margin: 0;
+    width: 100%;
+    min-height: 48px;
+    line-height: 20px;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.button{
+    color: grey;
+    margin: 10px;
+}
+
+.submit{
+    float: right;
+    color: #499dd9;
+    font-size: 13px;
+    line-height: 18px;  
+    height: 18px;
+    border-radius: 0;
+    float: right;
+    min-width: 0;
+    margin-top: 5px;
+    margin-left: 10px;
+    width: auto;
+    padding: 0;
+    font-weight: bold;
+    cursor: pointer;
+}
