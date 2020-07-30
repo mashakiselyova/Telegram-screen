@@ -10,7 +10,7 @@ body {
 }
 
 .wrapper{
-    height: 98%;
+    /* height: 98%; */
     max-width: 1010px;
     margin: auto;
     background: white;
@@ -113,6 +113,10 @@ h1{
     padding-top: 6px;
     color: black;
     position: relative;;
+}
+
+.message-nav:hover{
+    background-color:#edf6fc;
 }
 
 .message-nav-active p, .message-nav p{
@@ -225,7 +229,7 @@ h1{
     padding: 10px 15px 30px;
     margin: 0 auto;
     height: 98px;
-    align-content: bottom;
+    
 }
 
 .message-form{
